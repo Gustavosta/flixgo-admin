@@ -1,0 +1,39 @@
+.menu 
+	background: darken(#2b2b31, 5%)
+	box-shadow: 0 0 1px lighten(#1f1f23, 5%)
+	display: flex
+	nav
+		width: 80%
+		margin: 0 auto
+		// flex-wrap: nowrap !important
+		.navbar-brand
+			width: 60%
+		.navbar-brand
+			img 
+				width: 80%
+				+media-breakpoint-up(lg)
+					width: 100%
+		.navbar-toggler
+			display: flex
+		.nav-item
+			white-space: nowrap
+			padding: 0.5rem 1rem !important
+		.navbar-nav 
+			padding: 0.5rem 1rem
+			a 
+				color: #fff
+				font-size: 14px
+				border-radius: .5rem
+				+media-breakpoint-up(lg)
+					font-size: 14px
+		+media-breakpoint-up(xl)
+			.navbar-nav
+				a 
+					&:hover 
+						background: #2b2b31
+						font-size: 16px
+		.navbar-dark
+			display: block
+			+media-breakpoint-up(lg)
+				display: none
+

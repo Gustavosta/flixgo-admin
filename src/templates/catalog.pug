@@ -1,0 +1,32 @@
+extends _layout/layout2
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+	section.menu
+		.container-fluid
+			.row
+				nav.navbar.navbar-expand-lg
+					a.navbar-brand(href='#').ml-auto.order-2.order-lg-1
+						img(src="./img/logo.png", alt="")
+					button.order-1.order-lg-2.navbar-toggler.navbar-dark(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+						span.navbar-toggler-icon
+					.hiddenCollapse
+					#navbarNavAltMarkup.collapse.navbar-collapse.order-3
+						.navbar-nav
+							a.nav-item.nav-link.active(href='#')
+								| Trang chủ
+								span.sr-only (current)
+							a.nav-item.nav-link(href='#') Danh mục
+							a.nav-item.nav-link(href='#') Phim
+							a.nav-item.nav-link(href='#') Người dùng
+							a.nav-item.nav-link(href='#') Quốc gia
+							a.nav-item.nav-link(href='#') Bình luận
+							a.nav-item.nav-link(href='#') Gói phim
+			.row 
+				.col-md-3 
+					.insert 
+					
+				.col-md-9
+

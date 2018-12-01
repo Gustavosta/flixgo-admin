@@ -1,0 +1,108 @@
+/////////////////////////////////
+// Phần Slider
+/////////////////////////////////
+header
+	figure 
+		margin: 0 auto
+		width: 100%
+		object-fit: cover
+		padding: 2rem 0 0
+		.box-img 
+			color: #fff
+			+media-breakpoint-up(md)
+				display: flex
+				align-items: flex-end
+			p 
+				white-space: nowrap
+				margin-bottom: 6px
+				font-size: 1.2rem
+				text-align: center
+				+media-breakpoint-up(md)
+				margin-bottom: 6px
+
+		figcaption
+			text-align: center
+			i 
+				color: #fff
+				font-size: 3rem
+		+media-breakpoint-up(md)
+			width: 46%		
+			padding: 4rem 0	0
+.home
+	.home-main
+		margin: 0 auto
+		display: flex
+		flex-wrap: wrap
+		+media-breakpoint-up(md)
+			width: 100%
+		+media-breakpoint-up(lg)
+			width: 70%
+		a 
+			text-decoration: none
+		.items
+			&:nth-child(1)
+				.btn-home
+					background: $do
+					+media-breakpoint-up(lg)
+						&:hover 
+							background: darken($do, 10%)
+			&:nth-child(2)
+				.btn-home
+					background: $ngoc
+					+media-breakpoint-up(lg)
+						&:hover 
+							background: darken($ngoc, 10%)
+			&:nth-child(3)
+				.btn-home
+					background: $duong
+					+media-breakpoint-up(lg)
+						&:hover 
+							background: darken($duong, 10%)
+			&:nth-child(4)
+				.btn-home
+					background: $xanh
+					+media-breakpoint-up(lg)
+						&:hover 
+							background: darken($xanh, 10%)
+			&:nth-child(5)
+				.btn-home
+					background: $vang
+					+media-breakpoint-up(lg)
+						&:hover 
+							background: darken($vang, 10%)
+			&:nth-child(6)
+				.btn-home
+					background: $wisteria
+					+media-breakpoint-up(lg)
+						&:hover 
+							background: darken($wisteria, 10%)
+			&:nth-child(7)
+				.btn-home
+					background: $sun-flower
+					+media-breakpoint-up(lg)
+						&:hover 
+							background: darken($sun-flower, 10%)
+			&:nth-child(8)
+				.btn-home
+					background: $link
+					+media-breakpoint-up(lg)
+						&:hover 
+							background: darken($link, 10%)
+			.btn-home
+				// background: $do
+				width: 100%
+				padding: 2rem 2rem 0
+				color: #fff
+				margin-top: 2rem
+				border-radius: 5%
+				display: flex
+				justify-content: center
+				flex-direction: column
+				align-items: center
+				i 
+					font-size: 6rem
+					padding-bottom: 1rem
+				p 
+					margin: 1px
+					font-weight: 600
+					font-size: 1.2rem
