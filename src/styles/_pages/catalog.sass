@@ -8,11 +8,13 @@
 		// flex-wrap: nowrap !important
 		.navbar-brand
 			width: 60%
-		.navbar-brand
 			img 
-				width: 80%
-				+media-breakpoint-up(lg)
-					width: 100%
+				width: 60%
+				margin-left: auto !important
+				+media-breakpoint-up(md)
+					width: 50%
+				+media-breakpoint-up(xl)
+					width: 40%
 		.navbar-toggler
 			display: flex
 		.nav-item
@@ -24,16 +26,62 @@
 				color: #fff
 				font-size: 14px
 				border-radius: .5rem
-				+media-breakpoint-up(lg)
+				+media-breakpoint-up(xl)
 					font-size: 14px
 		+media-breakpoint-up(xl)
 			.navbar-nav
 				a 
+					font-size: 16px
 					&:hover 
-						background: #2b2b31
-						font-size: 16px
+						background: #2b2b31					
 		.navbar-dark
 			display: block
 			+media-breakpoint-up(lg)
 				display: none
+.main-cata
+	.container-fluid
+		padding: 0 !important
+		.tool
+			background: #7e7e8b
+			width: 100%
+			padding: 2rem 0
+			.search	
+				position: relative
+				.input-search
+					width: 100%
+					background: #b7e3f6
+					border: 1px solid darken(#b7e3f6, 5%)
+					padding: .8rem 2.5rem .8rem 1rem
+				.icon-search
+					position: absolute
+					top: 18%
+					right: 22px
+					a
+						color: #333
+						font-size: 1.5rem
+			.insert
+				a
+					color: #fff
+				.nav-link
+					padding: 1rem 1rem
+					&.active
+						background: #6a6a6f
+			p 
+				color: #fff
+				background: #333
+		.show
+			background: #3a3a41
+			width: 100%
+			color: #fff
+			padding: 1rem 2rem
+			.btn-show
+				background: $sen
+				padding: .5rem 2rem
+			.input-show
+				padding: .5rem 0
+				input 
+					padding: 0.4rem 0
+					width: 100%
+			.pd 
+				padding: 1rem
 

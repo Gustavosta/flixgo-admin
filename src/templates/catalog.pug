@@ -4,13 +4,16 @@ block variables
 	- var title = 'Home'
 	- var description = 'Description for home page'
 	- var bodyclass = 'home'
+//- Phần khai báo body
+block body
+
 	section.menu
 		.container-fluid
 			.row
 				nav.navbar.navbar-expand-lg
-					a.navbar-brand(href='#').ml-auto.order-2.order-lg-1
+					a.navbar-brand(href='#').ml-auto.order-2.order-md-1
 						img(src="./img/logo.png", alt="")
-					button.order-1.order-lg-2.navbar-toggler.navbar-dark(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+					button.order-1.order-md-2.navbar-toggler.navbar-dark(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
 						span.navbar-toggler-icon
 					.hiddenCollapse
 					#navbarNavAltMarkup.collapse.navbar-collapse.order-3
@@ -24,9 +27,38 @@ block variables
 							a.nav-item.nav-link(href='#') Quốc gia
 							a.nav-item.nav-link(href='#') Bình luận
 							a.nav-item.nav-link(href='#') Gói phim
-			.row 
-				.col-md-3 
-					.insert 
-					
+	section.main-cata
+		.container-fluid
+			.row
+				.col-md-3
+					.tool
+						.search
+							input.input-search(type="text" placeholder="Tìm kiếm ...")
+							.icon-search
+								a(href="")
+									.btn-btn-search
+										i.fas.fa-search
+						.insert
+							#v-pills-tab.nav.flex-column.nav-pills(role='tablist', aria-orientation='vertical')
+								a#v-pills-home-tab.nav-link.active(data-toggle='pill', href='#v-pills-home', role='tab', aria-controls='v-pills-home', aria-selected='true') Thêm danh mục
+								a#v-pills-profile-tab.nav-link(data-toggle='pill', href='#v-pills-profile', role='tab', aria-controls='v-pills-profile', aria-selected='false') All danh mục
 				.col-md-9
+					.show
+						#v-pills-tabContent.tab-content
+							#v-pills-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='v-pills-home-tab')
+								.row
+									.col-sm-12.col-md-6.col-lg-4
+										.input-show
+											label Số thứ tự
+											</br>
+											input(type="text")
+									.col-sm-12.col-md-6.col-lg-4
+										.input-show
+											label Tên thể loại
+											</br>
+											input(type="text")
+									.col-sm-12.col-md-12.col-lg-12.d-flex.align-items-end.pd
+										a.btn.btn-show Thêm
+							#v-pills-profile.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-profile-tab') ...
+
 

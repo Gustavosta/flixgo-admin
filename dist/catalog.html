@@ -1,23 +1,4 @@
-
-<section class="menu">
-  <div class="container-fluid">
-    <div class="row">
-      <nav class="navbar navbar-expand-lg"><a class="navbar-brand ml-auto order-2 order-lg-1" href="#"><img src="./img/logo.png" alt=""/></a>
-        <button class="order-1 order-lg-2 navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="hiddenCollapse"></div>
-        <div class="collapse navbar-collapse order-3" id="navbarNavAltMarkup">
-          <div class="navbar-nav"><a class="nav-item nav-link active" href="#">Trang chủ<span class="sr-only">(current)</span></a><a class="nav-item nav-link" href="#">Danh mục</a><a class="nav-item nav-link" href="#">Phim</a><a class="nav-item nav-link" href="#">Người dùng</a><a class="nav-item nav-link" href="#">Quốc gia</a><a class="nav-item nav-link" href="#">Bình luận</a><a class="nav-item nav-link" href="#">Gói phim</a></div>
-        </div>
-      </nav>
-    </div>
-    <div class="row"> 
-      <div class="col-md-3"> 
-        <div class="insert"> </div>
-      </div>
-      <div class="col-md-9"></div>
-    </div>
-  </div>
-</section><!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js" dir="ltr" lang="en" itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
@@ -104,6 +85,61 @@
   </head>
   <body class="home-page" id="top-page"><!-- ////////////// Begin Main ////////////// -->
     <main>
+      <section class="menu">
+        <div class="container-fluid">
+          <div class="row">
+            <nav class="navbar navbar-expand-lg"><a class="navbar-brand ml-auto order-2 order-md-1" href="#"><img src="./img/logo.png" alt=""></a>
+              <button class="order-1 order-md-2 navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="hiddenCollapse"></div>
+              <div class="collapse navbar-collapse order-3" id="navbarNavAltMarkup">
+                <div class="navbar-nav"><a class="nav-item nav-link active" href="#">Trang chủ<span class="sr-only">(current)</span></a><a class="nav-item nav-link" href="#">Danh mục</a><a class="nav-item nav-link" href="#">Phim</a><a class="nav-item nav-link" href="#">Người dùng</a><a class="nav-item nav-link" href="#">Quốc gia</a><a class="nav-item nav-link" href="#">Bình luận</a><a class="nav-item nav-link" href="#">Gói phim</a></div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="main-cata">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="tool">
+                <div class="search">
+                  <input class="input-search" type="text" placeholder="Tìm kiếm ...">
+                  <div class="icon-search"><a href="">
+                      <div class="btn-btn-search"><i class="fas fa-search"></i></div></a></div>
+                </div>
+                <div class="insert">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"><a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Thêm danh mục</a><a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">All danh mục</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="show">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="input-show">
+                          <label>Số thứ tự</label></br>
+                          <input type="text">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="input-show">
+                          <label>Tên thể loại</label></br>
+                          <input type="text">
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-12 col-lg-12 d-flex align-items-end pd"><a class="btn btn-show">Thêm</a></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main><!-- ////////////// End Main ////////////// -->
 <!-- ////////////// Javascript Include ////////////// -->
     <!-- inject:js -->
