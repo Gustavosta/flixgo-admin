@@ -100,8 +100,8 @@
       </section>
       <section class="main-cata">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-3">
+          <div class="row no-gutters">
+            <div class="col-md-3 pl-0 pr-0">
               <div class="tool">
                 <div class="search">
                   <input class="input-search" type="text" placeholder="Tìm kiếm ...">
@@ -133,7 +133,57 @@
                       <div class="col-sm-12 col-md-12 col-lg-12 d-flex align-items-end pd"><a class="btn btn-show">Thêm</a></div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="row">
+                      <div class="col-sm-12-col-md-3 ml-auto">
+                        <div class="select">
+                          <select class="btn-info btn-select" name="">
+                            <option value="">Tên</option>
+                            <option value="">STT</option>
+                          </select>
+                          <button class="btn-primary btn-button">Sắp xếp theo thứ tự</button>
+                        </div>
+                      </div>
+                      <div class="col-12 pl-0 pr-0">
+                        <table class="table">
+                          <thead class="thead-dark">
+                            <tr>
+                              <th scope="col">
+                                <input type="checkbox">
+                              </th>
+                              <th scope="col">STT</th>
+                              <th scope="col">Tên danh mục</th>
+                              <th scope="col">Xóa</th>
+                              <th scope="col">Sửa</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">
+                                <input type="checkbox">
+                              </td>
+                              <td>1</td>
+                              <td>Otto</td>
+                            </tr>
+                            <tr>
+                              <td scope="row">
+                                <input type="checkbox">
+                              </td>
+                              <td>2</td>
+                              <td>Thornton</td>
+                            </tr>
+                            <tr>
+                              <td scope="row">
+                                <input type="checkbox">
+                              </td>
+                              <td>3</td>
+                              <td>the Bird</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

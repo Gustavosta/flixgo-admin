@@ -6469,6 +6469,9 @@ header figure {
     background: #7e7e8b;
     width: 100%;
     padding: 2rem 0; }
+    @media (min-width: 768px) {
+      .main-cata .container-fluid .tool {
+        height: 90vh; } }
     .main-cata .container-fluid .tool .search {
       position: relative; }
       .main-cata .container-fluid .tool .search .input-search {
@@ -6496,7 +6499,8 @@ header figure {
     background: #3a3a41;
     width: 100%;
     color: #fff;
-    padding: 1rem 2rem; }
+    padding: 1rem 2rem;
+    height: 100%; }
     .main-cata .container-fluid .show .btn-show {
       background: #2196f3;
       padding: .5rem 2rem; }
@@ -6507,5 +6511,13 @@ header figure {
         width: 100%; }
     .main-cata .container-fluid .show .pd {
       padding: 1rem; }
+    .main-cata .container-fluid .show .btn-select {
+      padding: .5rem; }
+    .main-cata .container-fluid .show .btn-button {
+      padding: .4rem; }
+    .main-cata .container-fluid .show .table td, .main-cata .container-fluid .show .table th {
+      border: 0; }
+    .main-cata .container-fluid .show .table td {
+      background: #272736; }
 
 /*# sourceMappingURL=main.css.map */

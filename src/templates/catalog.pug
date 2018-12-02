@@ -29,8 +29,8 @@ block body
 							a.nav-item.nav-link(href='#') Gói phim
 	section.main-cata
 		.container-fluid
-			.row
-				.col-md-3
+			.row.no-gutters
+				.col-md-3.pl-0.pr-0
 					.tool
 						.search
 							input.input-search(type="text" placeholder="Tìm kiếm ...")
@@ -59,6 +59,37 @@ block body
 											input(type="text")
 									.col-sm-12.col-md-12.col-lg-12.d-flex.align-items-end.pd
 										a.btn.btn-show Thêm
-							#v-pills-profile.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-profile-tab') ...
-
-
+							#v-pills-profile.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-profile-tab')
+								.row
+									.col-sm-12-col-md-3.ml-auto
+										.select
+												select.btn-info.btn-select(name="")
+													option(value="") Tên
+													option(value="") STT
+												button.btn-primary.btn-button Sắp xếp theo thứ tự
+									.col-12.pl-0.pr-0
+										table.table
+											thead.thead-dark
+												tr
+													th(scope='col')
+														input(type="checkbox")
+													th(scope='col') STT
+													th(scope='col') Tên danh mục
+													th(scope='col') Xóa
+													th(scope='col') Sửa
+											tbody
+												tr
+													td(scope='row')
+														input(type="checkbox")
+													td 1
+													td Otto
+												tr
+													td(scope='row')
+														input(type="checkbox")
+													td 2
+													td Thornton
+												tr
+													td(scope='row')
+														input(type="checkbox")
+													td 3
+													td the Bird
