@@ -3848,7 +3848,7 @@ button.close {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 80%;
     margin: 1.75rem auto; }
   .modal-dialog-centered {
     min-height: calc(100% - (1.75rem * 2)); }
@@ -6519,5 +6519,92 @@ header figure {
       border: 0; }
     .main-cata .container-fluid .show .table td {
       background: #272736; }
+      .main-cata .container-fluid .show .table td a {
+        color: #fff; }
+
+.main-movie .container-fluid {
+  padding: 0 !important; }
+  .main-movie .container-fluid .tool {
+    background: #7e7e8b;
+    width: 100%;
+    padding: 2rem 0; }
+    @media (min-width: 768px) {
+      .main-movie .container-fluid .tool {
+        height: 90vh; } }
+    .main-movie .container-fluid .tool .search {
+      position: relative; }
+      .main-movie .container-fluid .tool .search .input-search {
+        width: 100%;
+        background: #b7e3f6;
+        border: 1px solid #a0daf3;
+        padding: .8rem 2.5rem .8rem 1rem; }
+      .main-movie .container-fluid .tool .search .icon-search {
+        position: absolute;
+        top: 18%;
+        right: 22px; }
+        .main-movie .container-fluid .tool .search .icon-search a {
+          color: #333;
+          font-size: 1.5rem; }
+    .main-movie .container-fluid .tool .insert a {
+      color: #fff; }
+    .main-movie .container-fluid .tool .insert .nav-link {
+      padding: 1rem 1rem; }
+      .main-movie .container-fluid .tool .insert .nav-link.active {
+        background: #6a6a6f; }
+    .main-movie .container-fluid .tool p {
+      color: #fff;
+      background: #333; }
+  .main-movie .container-fluid .show {
+    width: 100%;
+    color: #fff;
+    padding: 1rem 2rem;
+    height: 100%; }
+    .main-movie .container-fluid .show .btn-show {
+      background: #2196f3;
+      padding: .5rem 2rem; }
+    .main-movie .container-fluid .show .input-show {
+      padding: .5rem 0;
+      width: 100%; }
+      .main-movie .container-fluid .show .input-show input {
+        padding: 0.4rem 0;
+        width: 100%; }
+    .main-movie .container-fluid .show .input-checkbox {
+      padding: .5rem 0;
+      display: flex;
+      align-items: center; }
+      .main-movie .container-fluid .show .input-checkbox label {
+        margin: 0;
+        padding-left: .5rem; }
+    .main-movie .container-fluid .show .pd {
+      padding: 1rem; }
+    .main-movie .container-fluid .show .btn-select {
+      padding: .5rem; }
+    .main-movie .container-fluid .show .btn-button {
+      padding: .4rem; }
+    .main-movie .container-fluid .show .table td, .main-movie .container-fluid .show .table th {
+      border: 0; }
+    .main-movie .container-fluid .show .table td {
+      background: #272736; }
+      .main-movie .container-fluid .show .table td a {
+        color: #fff; }
+      .main-movie .container-fluid .show .table td .modal-content {
+        border: 0; }
+      .main-movie .container-fluid .show .table td .modal-body {
+        background: #fff;
+        color: #333; }
+      .main-movie .container-fluid .show .table td .modal-title {
+        color: #333; }
+      .main-movie .container-fluid .show .table td .close {
+        color: #333; }
+    .main-movie .container-fluid .show .table button {
+      background: none;
+      border: 0;
+      color: #fff; }
+    .main-movie .container-fluid .show textarea {
+      width: 100%; }
+    .main-movie .container-fluid .show .input-submit {
+      padding-right: 1rem;
+      display: inline-block;
+      margin: 1rem 0; }
 
 /*# sourceMappingURL=main.css.map */

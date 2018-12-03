@@ -31,7 +31,4 @@ $(function () {
         $('select.form-control').removeClass('form-control').css('width', '100%');
     }
 });
-$("input[type='checkbox']").click(function () {
-    $(this).select();
-});
 //# sourceMappingURL=main.js.map

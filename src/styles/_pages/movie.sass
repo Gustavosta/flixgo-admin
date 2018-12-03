@@ -1,44 +1,4 @@
-.menu 
-	background: darken(#2b2b31, 5%)
-	box-shadow: 0 0 1px lighten(#1f1f23, 5%)
-	display: flex
-	nav
-		width: 80%
-		margin: 0 auto
-		// flex-wrap: nowrap !important
-		.navbar-brand
-			width: 60%
-			img 
-				width: 60%
-				margin-left: auto !important
-				+media-breakpoint-up(md)
-					width: 50%
-				+media-breakpoint-up(xl)
-					width: 40%
-		.navbar-toggler
-			display: flex
-		.nav-item
-			white-space: nowrap
-			padding: 0.5rem 1rem !important
-		.navbar-nav 
-			padding: 0.5rem 1rem
-			a 
-				color: #fff
-				font-size: 14px
-				border-radius: .5rem
-				+media-breakpoint-up(xl)
-					font-size: 14px
-		+media-breakpoint-up(xl)
-			.navbar-nav
-				a 
-					font-size: 16px
-					&:hover 
-						background: #2b2b31					
-		.navbar-dark
-			display: block
-			+media-breakpoint-up(lg)
-				display: none
-.main-cata
+.main-movie
 	.container-fluid
 		padding: 0 !important
 		.tool
@@ -72,7 +32,6 @@
 				color: #fff
 				background: #333
 		.show
-			background: #3a3a41
 			width: 100%
 			color: #fff
 			padding: 1rem 2rem
@@ -82,9 +41,17 @@
 				padding: .5rem 2rem
 			.input-show
 				padding: .5rem 0
+				width: 100%
 				input 
 					padding: 0.4rem 0
 					width: 100%
+			.input-checkbox
+				padding: .5rem 0
+				display: flex
+				align-items: center
+				label
+					margin: 0
+					padding-left: .5rem
 			.pd 
 				padding: 1rem
 			.btn-select
@@ -98,4 +65,22 @@
 					background: #272736
 					a 
 						color: #fff
-
+					.modal-content
+						border: 0
+					.modal-body
+						background: #fff
+						color: #333
+					.modal-title
+						color: #333
+					.close
+						color: #333
+				button 
+					background: none
+					border: 0
+					color: #fff
+			textarea 
+				width: 100%
+			.input-submit
+				padding-right: 1rem
+				display: inline-block
+				margin: 1rem 0
