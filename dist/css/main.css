@@ -6430,14 +6430,8 @@ header figure {
     .menu nav .navbar-brand {
       width: 60%; }
       .menu nav .navbar-brand img {
-        width: 60%;
+        width: 150px;
         margin-left: auto !important; }
-        @media (min-width: 768px) {
-          .menu nav .navbar-brand img {
-            width: 50%; } }
-        @media (min-width: 1200px) {
-          .menu nav .navbar-brand img {
-            width: 40%; } }
     .menu nav .navbar-toggler {
       display: flex; }
     .menu nav .nav-item {
