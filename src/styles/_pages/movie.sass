@@ -4,9 +4,8 @@
 		.tool
 			background: #7e7e8b
 			width: 100%
+			height: 100%
 			padding: 2rem 0
-			+media-breakpoint-up(md)
-				height: 90vh
 			.search	
 				position: relative
 				.input-search
@@ -36,6 +35,19 @@
 			color: #fff
 			padding: 1rem 2rem
 			height: 100%
+			label
+				color: #fff
+			.input-group
+				.custom-file-label
+					color: #333
+				.form-control
+					width: 100%
+			.file-footer-buttons
+				display: none
+			.fileinput-cancel
+				display: none
+			.file-drop-zone-title
+				padding: 40px 10px
 			.btn-show
 				background: $sen
 				padding: .5rem 2rem
@@ -45,6 +57,22 @@
 				input 
 					padding: 0.4rem 0
 					width: 100%
+					color: #fff
+				select
+					appearance: none !important
+					-webkit-appearance: none
+					&::-ms-expand
+						display: none
+				.rangeslider--horizontal 
+					.rangeslider__handle
+						display: flex
+						justify-content: center
+						align-items: center
+						color: #000000
+				label 
+					&.active
+						background: #fff
+						color: #000
 			.input-checkbox
 				padding: .5rem 0
 				display: flex
@@ -80,7 +108,7 @@
 					color: #fff
 			textarea 
 				width: 100%
+				padding: 1.4rem 0
+				color: #fff
 			.input-submit
-				padding-right: 1rem
 				display: inline-block
-				margin: 1rem 0

@@ -6426,7 +6426,8 @@ header figure {
   display: flex; }
   .menu nav {
     width: 80%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    box-shadow: none; }
     .menu nav .navbar-brand {
       width: 60%; }
       .menu nav .navbar-brand img {
@@ -6462,10 +6463,8 @@ header figure {
   .main-cata .container-fluid .tool {
     background: #7e7e8b;
     width: 100%;
+    height: 100%;
     padding: 2rem 0; }
-    @media (min-width: 768px) {
-      .main-cata .container-fluid .tool {
-        height: 90vh; } }
     .main-cata .container-fluid .tool .search {
       position: relative; }
       .main-cata .container-fluid .tool .search .input-search {
@@ -6521,10 +6520,8 @@ header figure {
   .main-movie .container-fluid .tool {
     background: #7e7e8b;
     width: 100%;
+    height: 100%;
     padding: 2rem 0; }
-    @media (min-width: 768px) {
-      .main-movie .container-fluid .tool {
-        height: 90vh; } }
     .main-movie .container-fluid .tool .search {
       position: relative; }
       .main-movie .container-fluid .tool .search .input-search {
@@ -6553,6 +6550,18 @@ header figure {
     color: #fff;
     padding: 1rem 2rem;
     height: 100%; }
+    .main-movie .container-fluid .show label {
+      color: #fff; }
+    .main-movie .container-fluid .show .input-group .custom-file-label {
+      color: #333; }
+    .main-movie .container-fluid .show .input-group .form-control {
+      width: 100%; }
+    .main-movie .container-fluid .show .file-footer-buttons {
+      display: none; }
+    .main-movie .container-fluid .show .fileinput-cancel {
+      display: none; }
+    .main-movie .container-fluid .show .file-drop-zone-title {
+      padding: 40px 10px; }
     .main-movie .container-fluid .show .btn-show {
       background: #2196f3;
       padding: .5rem 2rem; }
@@ -6561,7 +6570,21 @@ header figure {
       width: 100%; }
       .main-movie .container-fluid .show .input-show input {
         padding: 0.4rem 0;
-        width: 100%; }
+        width: 100%;
+        color: #fff; }
+      .main-movie .container-fluid .show .input-show select {
+        appearance: none !important;
+        -webkit-appearance: none; }
+        .main-movie .container-fluid .show .input-show select::-ms-expand {
+          display: none; }
+      .main-movie .container-fluid .show .input-show .rangeslider--horizontal .rangeslider__handle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000; }
+      .main-movie .container-fluid .show .input-show label.active {
+        background: #fff;
+        color: #000; }
     .main-movie .container-fluid .show .input-checkbox {
       padding: .5rem 0;
       display: flex;
@@ -6595,10 +6618,10 @@ header figure {
       border: 0;
       color: #fff; }
     .main-movie .container-fluid .show textarea {
-      width: 100%; }
+      width: 100%;
+      padding: 1.4rem 0;
+      color: #fff; }
     .main-movie .container-fluid .show .input-submit {
-      padding-right: 1rem;
-      display: inline-block;
-      margin: 1rem 0; }
+      display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

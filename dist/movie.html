@@ -122,81 +122,89 @@
                         <div class="row">
                           <div class="col-12">
                             <div class="input-show">
-                              <label>Tên phim</label></br>
-                              <input type="text">
+                              <div class="md-form">
+                                <input class="form-control" id="form1" type="text">
+                                <label for="form1">Tên phim</label>
+                              </div>
                             </div>
                           </div>
                           <div class="col-12">
                             <div class="input-show">
-                              <label>Link1</label></br>
-                              <input type="text">
+                              <div class="md-form">
+                                <input class="form-control" id="form1" type="text">
+                                <label for="form1">Link 1</label>
+                              </div>
                             </div>
                           </div>
                           <div class="col-12">
                             <div class="input-show">
-                              <label>Link 2</label></br>
-                              <input type="text">
+                              <div class="md-form">
+                                <input class="form-control" id="form1" type="text">
+                                <label for="form1">Link 2</label>
+                              </div>
                             </div>
                           </div>
                           <div class="col-12">
                             <div class="input-show">
-                              <label>Link 3</label></br>
-                              <input type="text">
+                              <div class="md-form">
+                                <input class="form-control" id="form1" type="text">
+                                <label for="form1">Link 3</label>
+                              </div>
                             </div>
                           </div>
                           <div class="col-12">
                             <div class="row">
                               <div class="col-6">
                                 <div class="input-show">
-                                  <label>Thể loại</label></br>
-                                  <select class="btn btn-defaut">
-                                    <option>Hành động</option>
-                                    <option>Kinh dị</option>
-                                    <option>Tình cảm</option>
-                                    <option>Đờ ra mà</option>
+                                  <select class="browser-default custom-select">
+                                    <option selected="">Thể loai</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="col-6">
                                 <div class="input-show">
-                                  <label>Quốc gia</label></br>
-                                  <select class="btn btn-defaut">
-                                    <option>Việt nam</option>
-                                    <option>Mỹ</option>
-                                    <option>Hàn Quốc</option>
-                                    <option>Trung Quốc</option>
+                                  <select class="browser-default custom-select">
+                                    <option selected="">Quốc gia</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
                                   </select>
                                 </div>
                               </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="input-show">
+                              <label>IBMS</label></br>
+                              <input type="range" min="0" max="10" step="0.1">
                             </div>
                           </div>
                           <div class="col-12">
                             <div class="row">
                               <div class="col-4">
-                                <div class="input-show">
-                                  <label>IBMS</label></br>
-                                  <input type="text">
+                                <div class="input-checkbox">
+                                  <div class="custom-control custom-radio">
+                                    <input class="custom-control-input" id="Unchecked1" type="radio" name="defaultExampleRadios">
+                                    <label class="custom-control-label" for="Unchecked1">SD</label>
+                                  </div>
                                 </div>
                               </div>
-                              <div class="col-8">
-                                <div class="row pt-3">
-                                  <div class="col-6">
-                                    <div class="input-checkbox">
-                                      <input type="checkbox">
-                                      <label>SD</label>
-                                    </div>
+                              <div class="col-4">
+                                <div class="input-checkbox">
+                                  <div class="custom-control custom-radio">
+                                    <input class="custom-control-input" id="Unchecked2" type="radio" name="defaultExampleRadios">
+                                    <label class="custom-control-label" for="Unchecked2">HD</label>
                                   </div>
-                                  <div class="col-6">
-                                    <div class="input-checkbox">
-                                      <input type="checkbox">
-                                      <label>HD	</label>
-                                    </div>
-                                  </div>
-                                  <div class="col-6">
-                                    <div class="input-checkbox">
-                                      <input type="checkbox">
-                                      <label>FHD	</label>
-                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="input-checkbox">
+                                  <div class="custom-control custom-radio">
+                                    <input class="custom-control-input" id="Unchecked3" type="radio" name="defaultExampleRadios">
+                                    <label class="custom-control-label" for="Unchecked3">FHD</label>
                                   </div>
                                 </div>
                               </div>
@@ -208,26 +216,33 @@
                         <div class="row">
                           <div class="col-12">
                             <div class="input-show">
-                              <label>Mô tả 1</label></br>
-                              <textarea rows="5"></textarea>
+                              <div class="md-form">
+                                <textarea class="md-textarea form-control" id="form7" type="text" rows="4"></textarea>
+                                <label for="form7">Mô tả ngắn</label>
+                              </div>
                             </div>
                           </div>
                           <div class="col-12">
                             <div class="input-show">
-                              <label>Mô tả 2</label></br>
-                              <textarea rows="5"></textarea>
+                              <div class="md-form">
+                                <textarea class="md-textarea form-control" id="form7" type="text" rows="4"></textarea>
+                                <label for="form7">Mô tả dài</label>
+                              </div>
                             </div>
-                          </div>
-                          <div class="col-12 d-flex align-items-center">
-                            <label class="mb-0 mr-2">Hình ảnh:</label>
-                            <input type="file">
                           </div>
                           <div class="col-12">
-                            <div class="input-submit">
-                              <input class="btn btn-info" type="submit" value="Thêm">
-                            </div>
-                            <div class="input-submit">
-                              <input class="btn btn-info" type="submit" value="Reset">
+                            <div class="row">
+                              <div class="col-12 col-md-6">
+                                <input class="file" id="input-b1" name="input-b1" type="file" data-browse-on-zone-click="true">
+                              </div>
+                              <div class="col-12 col-md-6">
+                                <div class="input-submit">
+                                  <input class="btn btn-info" type="submit" value="Thêm">
+                                </div>
+                                <div class="input-submit">
+                                  <input class="btn btn-info" type="submit" value="Reset">
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -379,11 +394,7 @@
                                             <figure> <img class="img-fluid" src="./img/home__bg.jpg" alt=""></figure>
                                           </div>
                                           <div class="col-12 d-flex align-items-center">
-                                            <label class="m-0 pr-2">Thêm hình ảnh:</label>
-                                            <input type="file">
-                                          </div>
-                                          <div class="col-12 d-flex">
-                                            <input class="btn btn-info" type="submit" value="Thêm">
+                                            <input class="file" id="input-b1" name="input-b1" type="file" data-browse-on-zone-click="true" multiple>
                                           </div>
                                         </div>
                                       </div>
